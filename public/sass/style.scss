@@ -1,0 +1,471 @@
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+//to use these...
+//@include transform(tanslate(-50, -50));
+
+@mixin box-shadow($shadows...) {
+      -webkit-box-shadow: $shadows;
+         -moz-box-shadow: $shadows;
+          -ms-box-shadow: $shadows;
+           -o-box-shadow: $shadows;
+              box-shadow: $shadows;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($styles...) {
+  -webkit-transition: $styles;
+     -moz-transition: $styles;
+          transition: $styles;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: #000000 url(../img/body-bg.png);
+  margin: 0;
+  font-family: sans-serif;
+  
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//===============================Main Section-----------------------------------
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #000000;
+  border-bottom: 4px solid rgb(53, 53, 53);
+  box-shadow: 0px 3px 13px #000000;
+}
+
+.header-cntnr {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  height: 100%;
+  display: inline;
+}
+
+.header-logo {
+  margin-top: 10px;
+  margin-left: 4%;
+}
+
+nav ul {
+  width: 55%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  position: relative;
+  @include transition(height 1s);
+}
+
+nav ul li {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 80px;
+  text-align: center;
+  float: right;
+  text-shadow: 1px 2px 2px rgb(53, 53, 53);
+  
+}
+
+nav ul li:before {
+  content: "";
+  width: 2px;
+  height: 50px;
+  background: rgb(53, 53, 53);
+  display: block;
+  position: relative;
+  top: 15px;
+  float: left;
+}
+
+nav ul li:first-child:after {
+  content: "";
+  width: 2px;
+  height: 50px;
+  background: rgb(53, 53, 53);
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+nav ul li:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), #b80303);
+  text-shadow: 1px 2px 2px #000000;
+}
+
+nav ul li:active {
+  background: #fff;
+  color: #000;
+  text-shadow: 1px 2px 2px #b80303;
+}
+
+.active-li {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), #b80303);
+}
+
+nav ul li a {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 220px;
+  color: white;
+  background: #000000;
+  border-top: 4px solid #353535;
+  box-shadow: 0px -4px 13px #000000;
+  position: relative;
+}
+
+.footer-cntnr {
+  width: 100%;
+  max-width: 1200px;
+  height: 220px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.social-media {
+  width: 19.6%;
+  height: 75px;
+  position: absolute;
+  top: 72px;
+  left: 2%;
+}
+
+.alpha-img {
+  width: 32%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.alpha-img:hover {
+  width: 39%;
+  height: 114%;
+  top: -6%;
+  box-shadow: 1px 1px 4px #fff, -1px -1px 4px #fff, 1px -1px 4px #fff, -1px 1px 4px #fff;
+  z-index: 1000;
+}
+
+.alpha-img:active {
+  box-shadow: 1px 1px 4px #b80303, -1px -1px 4px #b80303, 1px -1px 4px #b80303, -1px 1px 4px #b80303;
+}
+
+.insta-img {
+  width: 32%;
+  position: absolute;
+  left: 36%;
+}
+
+.insta-img:hover {
+  width: 36%;
+  top: -6%;
+  box-shadow: 1px 1px 4px #fff, -1px -1px 4px #fff, 1px -1px 4px #fff, -1px 1px 4px #fff;
+  z-index: 1000;
+}
+
+.insta-img:active {
+  box-shadow: 1px 1px 4px #b80303, -1px -1px 4px #b80303, 1px -1px 4px #b80303, -1px 1px 4px #b80303;
+}
+
+.fb-img {
+  width: 32%;
+  position: absolute;
+  right: 0;
+}
+
+.fb-img:hover {
+  width: 36%;
+  top: -6%;
+  box-shadow: 1px 1px 4px #fff, -1px -1px 4px #fff, 1px -1px 4px #fff, -1px 1px 4px #fff;
+  z-index: 1000;
+}
+
+.fb-img:active {
+  box-shadow: 1px 1px 4px #b80303, -1px -1px 4px #b80303, 1px -1px 4px #b80303, -1px 1px 4px #b80303;
+}
+
+.hours {
+  width: 40%;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.copyright {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 27px;
+}
+
+.button-container {
+  width: 24%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  margin-top: 20px;
+}
+
+footer button {
+  width: 75%;
+  color: #ffffff;
+  font-size: 32px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #b80303);
+  cursor: pointer;
+  padding: 0;
+  padding-bottom: 20px;
+  margin-left: 12.5%;
+}
+
+footer button:hover {
+  background: #b80303;
+}
+
+footer button:active {
+  background: #fff;
+  color: #000;
+  text-shadow: 1px 2px 2px #b80303;
+}
+
+footer button a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10%;
+  box-sizing: border-box;
+  display: block;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 916px) {
+  
+  nav ul li:first-child a {
+    padding-top: 18px;
+  }
+  
+  nav ul li:first-child {
+    line-height: 22px;
+  }
+  
+  footer button {
+    padding-top: 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 834px) {
+  
+  footer button {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 716px) {
+  
+  nav ul li {
+    font-size: 18px;
+  }
+  
+  footer button {
+    font-size: 26px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 645px) {
+  
+  nav ul li {
+    font-size: 16px;
+  }
+  
+  nav ul li:first-child a {
+    padding-top: 23px;
+  }
+  
+  nav ul li:first-child {
+    line-height: 18px;
+  }
+  
+  footer button {
+    font-size: 24px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  
+  nav ul {
+//    display: none;
+    width: 100%;
+    height: 0;
+//    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    width: 100%;
+    height: 20%;
+    line-height: 20vh;
+    display: block;
+  }
+  
+  nav ul li:first-child {
+    line-height: 12vh;
+  }
+  
+  nav ul li:before {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: #353535;
+    display: block;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  
+  nav ul li:after {
+    display: none;
+  }
+  
+  .hamburger {
+    height: 40px;
+    width: 55px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 4%;
+  }
+  
+  .hamburger div {
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), #b80303);
+    display: block;
+    margin-bottom: 6px;
+    border: 1px solid #b80303;
+    border-radius: 3px;
+  }
+  
+  .social-media {
+    width: 10%;
+    min-width: 50px;
+    height: 76%;
+    top: 0;
+    left: 6%;
+    margin-top: 20px;
+  }
+  
+  .alpha-img {
+    width: 100%;
+    min-width: 60px;
+    height: 33%;
+    top: 0;
+    left: -8%;
+  }
+  
+  .insta-img {
+    width: 100%;
+    height: 33%;
+    top: 36%;
+    left: 0;
+  }
+  
+  .fb-img {
+    width: 100%;
+    height: 33%;
+    bottom: 0;
+  }
+  
+  .hours {
+    font-size: 18px;
+    position: relative;
+    right: 4%;
+  }
+  
+  .copyright {
+    font-size: 10px;
+    position: relative;
+    right: 4%;
+  }
+  
+  .button-container {
+    width: 30%;
+  }
+  
+  footer button {
+    font-size: 16px;
+  }
+  
+  footer p {
+    font-size: 11px;
+  }
+  
+}
+
+@media only screen and (max-width: 320px) {
+  
+  footer button {
+    font-size: 14px;
+  }
+  
+}

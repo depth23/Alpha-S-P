@@ -1,0 +1,37 @@
+{
+  "name": "sharps-development",
+  "version": "1.0.0",
+  "description": "coding and modifying websites, from layout to functionallity.  creating visually appealing sites that feature user-friendly design and clear navigation.",
+  "main": "index.html",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "to be determined"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "deon sharps",
+  "license": "ISC",
+  "bugs": {
+    "url": "to be determined"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "homepage": "http://www.sharpsdevelopment.com"
+}

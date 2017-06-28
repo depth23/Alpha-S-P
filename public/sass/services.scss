@@ -1,0 +1,74 @@
+.services-cntnr {
+  width: 100%;
+  background: #000;
+}
+
+.services-item {
+  width: 100%;
+  max-width: 1200px;
+  height: 200px;
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
+  background-position: right center;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.services-cntnr:nth-of-type(1) .services-item {
+  background-image: url(../img/services-imgs/sports.jpg);
+  border-top: 1px solid #b80303;
+}
+
+.services-cntnr:nth-of-type(2) .services-item {
+  background-image: url(../img/services-imgs/fitness-assesment.jpg);
+  background-position: 100% 77%;
+}
+
+.services-cntnr:nth-of-type(3) .services-item {
+  background-image: url(../img/services-imgs/strength-training.jpg);
+  background-position: 100% 36%;
+}
+
+.services-cntnr:nth-of-type(4) .services-item {
+  background-image: url(../img/services-imgs/personal-training.jpg);
+}
+
+.services-cntnr:nth-of-type(5) .services-item {
+  background-image: url(../img/services-imgs/groups.jpg);
+}
+
+.services-cntnr:nth-of-type(6) .services-item {
+  background-image: url(../img/services-imgs/shirts.jpg);
+  border-bottom: 1px solid #b80303;
+  margin-bottom: 20px;
+}
+
+.services-item h2 {
+  border-left: 5px solid #b80303;
+  padding-left: 10px;
+  margin: 20px 0 0 30px;
+}
+
+.services-item h2 span {
+  
+}
+
+.services-item ul {
+  list-style: none;
+  margin: 30px;
+}
+
+.services-item ul li {
+  border-left: 5px solid #b80303;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+
+@media only screen and (max-width: 523px) {
+
+  .services-item h2 {
+    font-size: 18px;
+  }
+}

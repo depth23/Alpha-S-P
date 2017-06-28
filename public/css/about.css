@@ -1,0 +1,161 @@
+.about-title {
+  width: 100%;
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-shadow: 2px 4px 5px #000000;
+  clear: both; }
+
+.about-p {
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 4px 5px #000000;
+  margin-top: 0;
+  margin-bottom: 50px; }
+
+section {
+  width: 100%;
+  height: 697px;
+  background: #000;
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden; }
+
+.sec-cntnr {
+  width: 100%;
+  height: 657px;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.coaches {
+  width: 38%;
+  color: #ffffff;
+  position: relative;
+  z-index: 1000; }
+
+.coaches h2, h3, h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #000000, -2px -2px #000000, -2px 2px #000000, 2px -2px #000000; }
+
+.coaches h2 {
+  font-size: 28px; }
+
+.coaches h3 {
+  font-size: 24px; }
+
+.coaches h4 {
+  font-size: 20px; }
+
+.margin-btm {
+  margin-bottom: 35px; }
+
+.coach-about {
+  width: 70%;
+  color: white;
+  font-size: 22px;
+  text-shadow: 1px 1px #000000, -1px -1px #000000, -1px 1px #000000, 1px -1px #000000;
+  position: relative;
+  z-index: 1000; }
+
+.pietes-about {
+  line-height: 40px;
+  margin-top: 70px; }
+
+.coach-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #b80303;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0 10px 10px 0;
+  border-right: 5px solid #b80303; }
+
+.j-bg {
+  background-image: url(../img/about-imgs/jay-bg.png); }
+
+.b-bg {
+  background-image: url(../img/about-imgs/blaire-bg.png); }
+
+.p-bg {
+  background-image: url(../img/about-imgs/piete-bg.png); }
+
+@media only screen and (max-width: 1162px) {
+  .coach-about {
+    font-size: 20px; }
+  .coaches h2 {
+    font-size: 26px; }
+  .coaches h3 {
+    font-size: 22px; }
+  .coaches h4 {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 1102px) {
+  .coach-about {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 950px) {
+  .p-bg {
+    background-position: 80%; } }
+
+@media only screen and (max-width: 834px) {
+  .coaches {
+    width: 50%; }
+  .coach-about {
+    width: 80%;
+    font-size: 18px; }
+  .coaches h2 {
+    font-size: 24px; }
+  .coaches h3 {
+    font-size: 20px; }
+  .coaches h4 {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 716px) {
+  .pietes-about {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 645px) {
+  .coach-about {
+    font-size: 16px; }
+  .pietes-about {
+    line-height: 36px; } }
+
+@media only screen and (max-width: 600px) {
+  .about-p {
+    font-size: 26px; }
+  .coaches {
+    width: 85%; }
+  .coaches h2 {
+    font-size: 20px; }
+  .coaches h3 {
+    font-size: 18px; }
+  .coaches h4 {
+    font-size: 14px; }
+  .coach-about {
+    width: 100%;
+    font-size: 0.95em;
+    line-height: 18px; }
+  .pietes-about {
+    line-height: 30px; }
+  .j-bg {
+    background-position: 60%; }
+  .b-bg {
+    background-position: 58%; } }
+
+@media only screen and (max-width: 320px) {
+  .coach-about {
+    line-height: 16px; }
+  .pietes-about {
+    line-height: 24px; } }
